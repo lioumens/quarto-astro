@@ -1,0 +1,19 @@
+title: Astro Project
+author: Michael Liou
+version: 0.0.1
+quarto-version: ">=1.2.0"
+contributes:
+  project:
+    project:
+      type: default
+      detect: 
+        - ["astro.config.mjs"]
+      render:
+        - "**/*.qmd"
+      preview:
+        serve:
+          cmd: "npm run dev"
+    format: astro-md
+  formats:
+    md:
+      variant: gfm+yaml_metadata_block
