@@ -7,7 +7,7 @@ contributes:
     project:
       type: default
       detect: 
-        - ["astro.config.mjs"]
+        - ["astro.config.mjs", "package.json"]
       render:
         - "**/*.qmd"
       preview:
@@ -16,4 +16,4 @@ contributes:
     format: astro-md
   formats:
     md:
-      variant: gfm+yaml_metadata_block
+      variant: gfm+yaml_metadata_block+smart
